@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>662</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QSplitter" name="splitter_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="mainToolsGroupBox">
+         <property name="title">
+          <string>Main Tools</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QRadioButton" name="brushRadioBtn">
+              <property name="text">
+               <string>Brush</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="eraserRadioBtn">
+              <property name="text">
+               <string>Eraser</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="sizeLabel">
+            <property name="text">
+             <string>Size Brush</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="sizeSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksBelow</enum>
+            </property>
+            <property name="tickInterval">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="colorsLabel">
+            <property name="text">
+             <string>Colors</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QSplitter" name="splitter">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <widget class="QLabel" name="redLabel">
+               <property name="text">
+                <string>Red</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QSlider" name="redSlider">
+               <property name="maximum">
+                <number>255</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksBelow</enum>
+               </property>
+               <property name="tickInterval">
+                <number>25</number>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSplitter" name="splitter_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <widget class="QLabel" name="greenLabel">
+               <property name="text">
+                <string>Green</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QSlider" name="greenSlider">
+               <property name="maximum">
+                <number>255</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksBelow</enum>
+               </property>
+               <property name="tickInterval">
+                <number>25</number>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSplitter" name="splitter_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <widget class="QLabel" name="blueLabel">
+               <property name="text">
+                <string>Blue</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QSlider" name="blueSlider">
+               <property name="maximum">
+                <number>255</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::TicksBelow</enum>
+               </property>
+               <property name="tickInterval">
+                <number>25</number>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clearScenePushBtn">
+            <property name="text">
+             <string>Clear Scene</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="pluginsLabel">
+           <property name="text">
+            <string>Plugins</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolBox" name="pluginsToolBox">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="page">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>238</width>
+              <height>282</height>
+             </rect>
+            </property>
+            <attribute name="label">
+             <string>Page 1</string>
+            </attribute>
+           </widget>
+           <widget class="QWidget" name="page_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>238</width>
+              <height>282</height>
+             </rect>
+            </property>
+            <attribute name="label">
+             <string>Page 2</string>
+            </attribute>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
